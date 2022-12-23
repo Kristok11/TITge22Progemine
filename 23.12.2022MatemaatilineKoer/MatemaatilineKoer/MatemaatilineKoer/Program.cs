@@ -29,6 +29,7 @@
                     default:
                         break;
 
+                        //teha korrutamine, jagamine ja lahutamine
                 }
             }
             catch (FormatException)//numbrilise v''rtuse kontroll
