@@ -14,7 +14,6 @@ namespace TEST
             //pindala jne).Loo programm, mis küsib kasutajalt 
             //kujundi tüüpi sõna valikuna, kujundi andmeid
             //(vastavalt vajadusele külje pikkust, raadiust vms).
-            //NB! Teemanti puhul arvutage ringi ümbermõõt ja pindala.
 
             Console.WriteLine("Sisesta kujund: ");
             Console.WriteLine("1. Ruut");
@@ -27,20 +26,12 @@ namespace TEST
             switch (tehe)
             {
                 case "kujund":
-                    Square();
+
                     break;
                 default:
                     Console.WriteLine("Valikut ei tehtud");
                     break;
             }
-        }
-
-
-        private static void Square()
-        {
-            int number = int.Parse(Console.ReadLine());
-            Console.WriteLine("ruut");
-            Console.WriteLine(number);
         }
     }
 }
