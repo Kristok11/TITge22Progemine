@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueTuple", "ValueTuple\ValueTuple.csproj", "{1EF0B772-047D-4C1A-876A-012EEEC9394F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EF0B772-047D-4C1A-876A-012EEEC9394F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EF0B772-047D-4C1A-876A-012EEEC9394F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EF0B772-047D-4C1A-876A-012EEEC9394F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EF0B772-047D-4C1A-876A-012EEEC9394F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {842980FE-3878-425F-A37A-BEA4154E8536}
+	EndGlobalSection
+EndGlobal
