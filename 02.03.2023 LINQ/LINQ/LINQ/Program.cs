@@ -35,6 +35,16 @@
             MaxLINQ();
 
             SumLINQ();
+
+            UnionLINQ();
+
+            Skip();
+
+            SkipWhile();
+
+            Take();
+
+            TakeWhile();
         }
 
 
@@ -279,6 +289,76 @@
 
             Console.WriteLine("Täiskasvanud isikute arv " + numAdults);
             Console.WriteLine("Täiskasvanute koondvanuse tulemus " + sumAdult);
+        }
+
+        public static void UnionLINQ()
+        {
+            Console.WriteLine("\n\n----------------Union------------");
+            //kõik kordused teeb üheks e topelt ei kuva
+
+            IList<string> list1 = new List<string>() { "car", "bike", "truck", "FOOT"};
+            IList<string> list2 = new List<string>() { "Car", "BIKE", "truck", "FOOT"};
+
+            var result = list1.Union(list2);
+
+            foreach (var item in result)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        public static void Skip()
+        {
+            Console.BackgroundColor = ConsoleColor.Black;
+
+            Console.WriteLine("\n\n----------------Skip------------");
+
+            var skip = PeopleList.people.Skip(3);
+
+            foreach (var item in skip)
+            {
+                Console.WriteLine(item.Id);
+            }
+        }
+
+        public static void SkipWhile()
+        {
+            Console.WriteLine("\n\n----------------SkipWhile------------");
+            //jätab nimekirjast vahele nii kaua, kuni leiab sobiva kattuvuse
+            //ja peale seda näitab kogu nimekirja
+
+            var skipWhile = PeopleList.people
+                .SkipWhile(x => x.Age > 18);
+
+            foreach (var item in skipWhile)
+            {
+                Console.WriteLine(item.Name + " " + item.Age);
+            }
+        }
+
+        public static void Take()
+        {
+            Console.WriteLine("\n\n----------------Take------------");
+            //n'itab kolme esimest
+
+            var take = PeopleList.people.Take(3);
+
+            foreach(var item in take)
+            {
+                Console.WriteLine(item.Id + " " + item.Name);
+            }
+        }
+
+        public static void TakeWhile()
+        {
+            Console.WriteLine("\n\n----------------TakeWhile------------");
+
+            var takeWhile = PeopleList.people.TakeWhile(x => x.Age > 18);
+
+            foreach (var item in takeWhile)
+            {
+                Console.WriteLine(item.Id + " " + item.Name);
+            }
         }
     }
 }

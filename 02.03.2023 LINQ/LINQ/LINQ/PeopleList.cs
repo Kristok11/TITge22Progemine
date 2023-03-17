@@ -8,7 +8,7 @@
                 { 
                     Id = 1, 
                     Name = "Joonas", 
-                    Age = 13, 
+                    Age = 33, 
                     GenderId = Guid.Parse("dad88543-2ab1-4fa0-822b-b83f6d07753e")
                 },
                 new People() 
